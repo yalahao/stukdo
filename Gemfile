@@ -58,6 +58,17 @@ gem 'devise'
 # Auto HTML
 gem 'auto_html'
 
+group :development, :test do
+	gem 'spring'
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
+
+
 
 end
 
